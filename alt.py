@@ -81,7 +81,7 @@ async def send_cards():
                 cards_sent_count += 1
 
                 # Random interval between 50 to 160 seconds
-                random_interval = random.randint(50, 160)
+                random_interval = random.randint(35, 60)
                 print(f"Waiting for {random_interval} seconds before next card...")
                 for _ in tqdm(range(random_interval), desc="Waiting", unit="s"):
                     await asyncio.sleep(1)
